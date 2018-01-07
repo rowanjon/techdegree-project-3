@@ -24,7 +24,7 @@
 
     <form action="index.html" method="post" class="container">
 
-      <fieldset class="container primary">
+      <fieldset class="primary">
 
         <legend>Contact Information</legend>
 
@@ -60,34 +60,29 @@
 
       <div class="bottom-div2"></div>
 
-      <fieldset class="container secondary">
+      <fieldset class="secondary">
 
         <legend>Newsletter</legend>
 
-        <fieldset class="checkboxes">
 
-          <span>Select the newsletters you would like to receive</span>
+        <span>Select the newsletters you would like to receive</span>
 
-          <input type="checkbox" id="html-news" name="html-news" value="html-news"><label for="html-news">HTML News</label>
+        <input type="checkbox" id="html-news" name="html-news" value="html-news" class="checkboxes"><label for="html-news">HTML News</label>
 
-          <input type="checkbox" id="css-news" name="css-news" value="css-news"><label for="css">CSS News</label>
+        <input type="checkbox" id="css-news" name="css-news" value="css-news"><label for="css-news"  class="checkboxes">CSS News</label>
 
-          <input type="checkbox" id="javascript-news" name="javascript-news" value="javascript-news"><label for="javascript-news">Javascript News</label>
+        <input type="checkbox" id="javascript-news" name="javascript-news" value="javascript-news"  class="checkboxes"><label for="javascript-news">Javascript News</label>
 
-        </fieldset>
 
-        <fieldset class="radios">
+        <span>Newsletter format</span>
 
-          <span>Newsletter format</span>
+        <input type="radio" id="radio-html" name="radio-html" value="radio-html"><label for="radio-html">HTML</label>
 
-          <input type="radio" id="radio-html" name="radio-html" value="radio-html"><label for="javascript-news">HTML</label>
+        <input type="radio" id="radio-plain" name="radio-plain" value="radio-plain"><label for="radio-plain">Plain text</label>
 
-          <input type="radio" id="radio-plain" name="radio-plain" value="radio-plain"><label for="javascript-news">Plain text</label>
+        <label for="other-topics">Other topics you'd like to hear about</label>
+        <textarea name="other-topics" id="other-topics" placeholder="Let us know your interests here!"></textarea>
 
-          <label for="other-topics">Other topics you'd like to hear about</label>
-          <textarea name="other-topics" id="other-topics" placeholder="Let us know your interests here!"></textarea>
-
-        </fieldset>
 
         <button type="submit" name="signup" id="signup">Sign Up</button>
         <span class="copyright">Copyright&copy; The Code Review</span>

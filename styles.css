@@ -22,11 +22,6 @@ h2 {
   margin-bottom: 0.4%;
 }
 
-.container,
-.sub-heading {
-  margin: 0 3%;
-}
-
 .sub-heading {
   text-align: center;
   margin-top: 3%;
@@ -44,10 +39,17 @@ h2 {
   margin-top: 3px;
 }
 
-fieldset,
 .container {
   display: flex;
   flex-direction: column;
+  border: none;
+  padding: 0;
+}
+
+.primary,
+.secondary {
+  display: flex;
+  flex-direction: row;
   border: none;
   padding: 0;
 }
@@ -61,13 +63,21 @@ legend {
 .primary,
 .secondary {
   margin: 0;
-  justify-content: flex-end;
   max-height: 30%;
 }
 
-select,
-input {
-  width: 100%;
+.secondary {
+  margin-bottom: 40%;
+}
+
+.primary select,
+.primary input {
+  height: 50px;
+  padding: 0 4%;
+}
+
+label {
+  margin: 15px 0;
 }
 
 input,
@@ -91,11 +101,8 @@ input[type="checkbox"] + label {
 	padding-left: 8px;
 }
 
-.checkboxes input,
-.checkboxes label {
-  display: inline-block;
-  margin-bottom: 0;
-  vertical-align: middle;
+#zipcode {
+  height: 40px;
 }
 
 #html-news,
@@ -104,18 +111,19 @@ input[type="checkbox"] + label {
 #radio-html,
 #radio-plain {
   width: 5%;
-  margin-right: 0;
 }
 
 textarea {
   resize: none;
   width: 100%;
+  margin-bottom: 26px;
+  height: 110px;
 }
 
 :focus {
     outline: -webkit-focus-ring-color coral 5px;
-    transition: 0.7s;
-    background: #dde5ff;
+    transition: 1.1s;
+    background: #d4b2ff;
 }
 
 button {
@@ -155,6 +163,11 @@ button {
     margin: 0 3% 150px;
   }
 
+  .container,
+  .sub-heading {
+    margin: 0 3%;
+  }
+
   #top-div {
     margin-top: 35px;
   }
@@ -167,31 +180,64 @@ button {
     margin: 30px 0 25px;
   }
 
-  label {
-    margin: 15px 0;
+  .primary select,
+  .primary input {
+    width: 100%;
   }
 
-  select,
-  input {
-    height: 50px;
-    padding: 0 4%;
-  }
 
   #zipcode {
-    height: 40px;
     width: 50%;
-  }
+    }
 
   .secondary span {
     margin-bottom: 17px;
   }
 
-  textarea {
-    height: 100px;
-  }
-
-
 
 }
 
 /**** Desktop Layout ****/
+
+@media (min-width: 768px) {
+
+  h2 {
+    margin-top: 90px;
+  }
+
+
+  #top-div {
+    margin-top: 55px;
+  }
+
+  .bottom-div {
+    margin-bottom: 50px;
+  }
+
+  .bottom-div2 {
+    margin: 50px 0 45px;
+  }
+
+  .container,
+  .sub-heading {
+    margin: 0 25%;
+  }
+
+  .primary select,
+  .primary input {
+    width: 66%;
+  }
+
+  input:nth-child(2n+3) {
+    align-self: flex-end;
+  }
+
+
+
+
+
+
+
+
+
+}
