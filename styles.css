@@ -246,6 +246,10 @@ button {
     align-content: center;
   }
 
+  .contact-info label {
+    margin-top: 12.5px;
+    height: 25px;
+  }
 
   .container,
   .sub-heading {
@@ -261,6 +265,7 @@ button {
 
   #zipcode {
     width: 33%;
+    margin-right: 33%;
   }
 
 
