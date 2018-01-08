@@ -27,35 +27,42 @@
       <fieldset class="primary">
 
         <legend>Contact Information</legend>
-
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="user_name" placeholder="Required" required>
-
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="user_email" placeholder="Required" required>
-
-        <label for="tel">Phone Number</label>
-        <input type="tel" id="tel" name="user_tel" placeholder="+X XXX - XXX - XXXX">
-
-        <label for="street">Street Address</label>
-        <input type="text" id="street" name="user_street" placeholder="1234 Example Street">
-
-        <label for="city">City</label>
-        <input type="text" id="city" name="user_city" placeholder="Example City">
-
-        <label for="state">State</label>
-        <select id="state" name="user_state">
-          <option>Choose State</option>
-          <option>State 1</option>
-          <option>State 2</option>
-          <option>State 3</option>
-          <option>State 4</option>
-          <option>State 5</option>
-        </select>
-
-        <label for="zipcode">Zip Code</label>
-        <input type="text" id="zipcode" name="user_zipcode" placeholder="XXXXX">
-
+        
+        <div class="contact-info">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="user_name" placeholder="Required" required>
+        </div>
+        <div class="contact-info">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="user_email" placeholder="Required" required>
+        </div>
+        <div class="contact-info">
+          <label for="tel">Phone Number</label>
+          <input type="tel" id="tel" name="user_tel" placeholder="+X XXX - XXX - XXXX">
+        </div>
+        <div class="contact-info">
+          <label for="street">Street Address</label>
+          <input type="text" id="street" name="user_street" placeholder="1234 Example Street">
+        </div>
+        <div class="contact-info">
+          <label for="city">City</label>
+          <input type="text" id="city" name="user_city" placeholder="Example City">
+        </div>
+        <div class="contact-info">
+          <label for="state">State</label>
+          <select id="state" name="user_state">
+            <option>Choose State</option>
+            <option>State 1</option>
+            <option>State 2</option>
+            <option>State 3</option>
+            <option>State 4</option>
+            <option>State 5</option>
+          </select>
+        </div>
+        <div class="contact-info">
+          <label for="zipcode">Zip Code</label>
+          <input type="text" id="zipcode" name="user_zipcode" placeholder="XXXXX">
+        </div>
       </fieldset>
 
       <div class="bottom-div2"></div>
@@ -67,19 +74,23 @@
 
         <span>Select the newsletters you would like to receive</span>
 
-        <input type="checkbox" id="html-news" name="html-news" value="html-news" class="checkboxes"><label for="html-news">HTML News</label>
-
-        <input type="checkbox" id="css-news" name="css-news" value="css-news"><label for="css-news"  class="checkboxes">CSS News</label>
-
-        <input type="checkbox" id="javascript-news" name="javascript-news" value="javascript-news"  class="checkboxes"><label for="javascript-news">Javascript News</label>
-
+        <div class="checkboxes">
+          <input type="checkbox" id="html-news" name="html-news" value="html-news"><label for="html-news">HTML News</label>
+        </div>
+        <div class="checkboxes">
+          <input type="checkbox" id="css-news" name="css-news" value="css-news"><label for="css-news">CSS News</label>
+        </div>
+        <div class="checkboxes">
+          <input type="checkbox" id="javascript-news" name="javascript-news" value="javascript-news"><label for="javascript-news">Javascript News</label>
+        </div>
 
         <span>Newsletter format</span>
-
-        <input type="radio" id="radio-html" name="radio-html" value="radio-html"><label for="radio-html">HTML</label>
-
-        <input type="radio" id="radio-plain" name="radio-plain" value="radio-plain"><label for="radio-plain">Plain text</label>
-
+        <div class="checkboxes">
+          <input type="radio" id="radio-html" name="radio-html" value="radio-html"><label for="radio-html">HTML</label>
+        </div>
+        <div class="checkboxes">
+          <input type="radio" id="radio-plain" name="radio-plain" value="radio-plain"><label for="radio-plain">Plain text</label>
+        </div>
         <label for="other-topics">Other topics you'd like to hear about</label>
         <textarea name="other-topics" id="other-topics" placeholder="Let us know your interests here!"></textarea>
 

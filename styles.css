@@ -52,6 +52,8 @@ h2 {
   flex-direction: row;
   border: none;
   padding: 0;
+  margin: 0;
+  max-height: 30%;
 }
 
 legend {
@@ -60,10 +62,8 @@ legend {
   margin: 20px 0 23px;
 }
 
-.primary,
-.secondary {
-  margin: 0;
-  max-height: 30%;
+.secondary legend {
+  margin-bottom: 12px;
 }
 
 .secondary {
@@ -74,10 +74,6 @@ legend {
 .primary input {
   height: 50px;
   padding: 0 4%;
-}
-
-label {
-  margin: 15px 0;
 }
 
 input,
@@ -93,16 +89,33 @@ input::placeholder {
   font-style: italic;
 }
 
+.checkboxes {
+  margin: 6px 0;
+}
+
 input[type="radio"] + label,
 input[type="checkbox"] + label {
-  font-weight: 300;
-	font-size: 1.2rem;
+  font-weight: 200;
+	font-size: 0.95rem;
   display: inline;
-	padding-left: 8px;
+	padding-left: 6px;
+}
+
+input[type="checkbox"]:checked + label {
+  font-weight: bold;
 }
 
 #zipcode {
   height: 40px;
+}
+
+#javascript-news,
+#radio-plain {
+  margin-bottom: 5%;
+}
+
+#other-topics {
+  margin-bottom: 3%;
 }
 
 #html-news,
@@ -116,7 +129,7 @@ input[type="checkbox"] + label {
 textarea {
   resize: none;
   width: 100%;
-  margin-bottom: 26px;
+  margin: 10px 0 3%;
   height: 110px;
 }
 
@@ -131,9 +144,8 @@ button {
   font-size: 1.4rem;
   font-weight: bold;
   width: 100%;
-  max-height: 6%;
   padding: 6% 0;
-  margin: 3% 0;
+  margin: 6% 0;
   border: none;
   background: mediumaquamarine;
   color: white;
@@ -163,6 +175,11 @@ button {
     margin: 0 3% 150px;
   }
 
+.contact-info label {
+  display: block;
+  margin: 13px 0;
+}
+
   .container,
   .sub-heading {
     margin: 0 3%;
@@ -185,13 +202,17 @@ button {
     width: 100%;
   }
 
+  .contact-info {
+    margin: 10px 0;
+  }
+
 
   #zipcode {
     width: 50%;
     }
 
   .secondary span {
-    margin-bottom: 17px;
+    margin: 10px 0 13px;
   }
 
 
@@ -218,19 +239,19 @@ button {
     margin: 50px 0 45px;
   }
 
+
   .container,
   .sub-heading {
     margin: 0 25%;
   }
 
+
   .primary select,
   .primary input {
     width: 66%;
+
   }
 
-  input:nth-child(2n+3) {
-    align-self: flex-end;
-  }
 
 
 
