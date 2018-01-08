@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-  background: #3d4a60;
+  background: #3B71AC;
   color: white;
   margin: 0;
   text-align: center;
@@ -28,7 +28,7 @@ h2 {
 }
 
 #top-div {
-  background: #3d4a60;
+  background: #3B71AC;
   height: 5px;
 }
 
@@ -147,7 +147,7 @@ button {
   padding: 6% 0;
   margin: 6% 0;
   border: none;
-  background: mediumaquamarine;
+  background: #7F95AC;
   color: white;
   cursor: pointer;
 }
