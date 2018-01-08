@@ -87,6 +87,7 @@ textarea {
 input::placeholder {
   text-align: right;
   font-style: italic;
+  opacity: 0.5;
 }
 
 .checkboxes {
